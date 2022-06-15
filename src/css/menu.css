@@ -1,0 +1,194 @@
+#divMenu,
+ul,
+li,
+li li {
+  margin: 0;
+
+  padding: 0;
+}
+
+#divMenu {
+  width: 150px;
+  float: left;
+  /* height: 27px; */
+}
+.tab {
+  height: 10px;
+}
+#divMenu ul {
+  line-height: 28px;
+}
+
+#divMenu li {
+  list-style: none;
+
+  position: relative;
+
+  /* background: #50B9B0; */
+}
+
+#divMenu li li {
+  list-style: none;
+
+  position: relative;
+
+  /* background: #50B9B0; */
+
+  left: 148px;
+
+  top: -27px;
+}
+
+#divMenu ul li a {
+  width: 125px;
+
+  height: 12px;
+
+  display: block;
+
+  text-decoration: none;
+
+  text-align: left;
+
+  padding: 11px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* color:seashell; */
+
+  border: 1px solid #eee;
+  /*background-color: rgb(172, 171, 179);*/
+  background-color: rgb(50, 28, 72);
+  /* border-radius: 10px; */
+  /* background-color: gray; */
+  color: white;
+  font-size: 11px;
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+}
+
+#divMenu ul li a:hover {
+  background-color: gray;
+}
+#divMenu ul ul {
+  position: absolute;
+
+  visibility: hidden;
+  z-index: 1;
+
+  top: 27px;
+}
+
+#divMenu ul li:hover ul li {
+  visibility: visible;
+}
+
+#divMenu a:hover {
+  font-weight: bolder;
+}
+.row {
+  display: flex;
+}
+.div1 {
+  flex: 1 1 auto;
+  /* margin-top: 4px; */
+}
+
+.div2 {
+  flex: 0 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  margin-left: 10px;
+  margin-top: 7px;
+  width: 158px;
+  margin-right: 10px;
+
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
+  height: auto;
+}
+
+nav ul {
+  position: relative;
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  font-family: arial;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  padding: 7px 15px;
+  height: 31px;
+  transition: 0.5s ease;
+}
+
+nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+nav ul ul {
+  position: absolute;
+  left: 158px;
+  width: 215px;
+  top: 0;
+  z-index: 1;
+  display: none;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nesteddropdown {
+  position: absolute;
+  left: 215px;
+  width: 215px;
+  top: 0;
+  z-index: 1;
+  display: none;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul span {
+  position: absolute;
+  right: 10px;
+  font-size: 1.5em;
+}
+
+nav ul .dropdown {
+  position: relative;
+}
+
+nav ul .dropdown:hover > ul {
+  display: inline;
+}
+
+nav ul .dropdown_two ul {
+  /* position: absolute; */
+  /* left: 200px; */
+  left: 161px;
+  top: 0;
+}
+
+nav ul .dropdown_two:hover ul {
+  display: inline;
+}
